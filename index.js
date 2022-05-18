@@ -12,12 +12,6 @@ app.set("view engine", "handlebars");
 app.set("views", `${__dirname}/pages`);
 
 app.use(cookieParser());
-app.use(session({
-    secret: "x319h39hh981h3jad",
-    resave: false,
-    saveUninitialized: true,
-    cookie: { maxAge: 24 * 60 * 1000 } //por 24h mantem a sessao do usuario
-}));
 
 app.use(function (req, res, next) {
     res.locals.session = req.session;
