@@ -250,7 +250,7 @@ iframe {
   -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
   animation: anim-shadow 0.5s ease-in-out forwards;
 }
-
+/* 
 @-webkit-keyframes anim-shadow {
   to {
     box-shadow: 0px 0px 70px 25px;
@@ -263,7 +263,7 @@ iframe {
     box-shadow: 0px 0px 70px 25px;
     opacity: 0;
   }
-}
+} */
 
 .symbol-input100 {
   font-size: 15px;
@@ -355,8 +355,9 @@ iframe {
   font-size: 15px;
   line-height: 1.5;
   color: #fff;
+  right: 0;
   text-transform: uppercase;
-
+  position: absolute;
   width: -50%;
   height: 30px;
   border-radius: 25px;
@@ -383,7 +384,7 @@ iframe {
 
 
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .wrap-login100 {
     padding: 177px 90px 33px 85px;
   }
@@ -415,7 +416,7 @@ iframe {
   .wrap-login100 {
     padding: 100px 15px 33px 15px;
   }
-}
+} */
 
 
 /*------------------------------------------------------------------
@@ -478,10 +479,26 @@ iframe {
   opacity: 1;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 720px) {
   .alert-validate::before {
     visibility: visible;
     opacity: 1;
+  }
+  .container-logo{
+    display: none;
+  }
+  .logo-defesa{
+    display: none;
+  }
+  .body{
+    display: none;
+  }
+  .card-login{
+    flex:1;
+  }
+  .logout100-form-btn{
+    right: 0;
+    bottom: 55px;
   }
 }
 .container-logo{
@@ -498,43 +515,47 @@ iframe {
 
 .logo-gov{
   width: 75%;
-  height: 90px;
-  float: inline-end;
+  height: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
-  padding-top: -5px;
-  
+  padding-bottom: 15px;
 }
 
 .body{
   background-image: linear-gradient(#E97211, #F1944A);
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.container-logo{
+  display: flex;
+  align-items: center;
 }
 
 .logo-defesa{
   width: 250px;
   height: 250px;
-  display:block;
-  float: left;
-  margin-left: 25%;
-  margin-right: auto;
-  margin-top: 13%;
 }
 
 .card-login{
   background-color: #101A37;
   width: 35%;
-  height: 100%;
+  height: 100vh;
   float: right;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .top-detail{
-  width: 35%;
-  float: right;
-  margin-left: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .input-icons i {
@@ -542,16 +563,13 @@ iframe {
 }
   
 .input-icons {
-  width: 100%;
   margin-bottom: 10px;
 }
   
 .icon {
-  padding: 10px;
+  padding: 13px;
   color: #545454;
-  min-width: 50px;
-  text-align: center;
-  margin-left: 20%;
+  margin-left: 5%;
 }
   
 .input-field {
@@ -559,6 +577,14 @@ iframe {
   padding: 10px;
   text-align: center;
   border-radius: 50px;
-  width: 60%;
-  margin-left: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-top{
+  width: 250px;
+  height: 250px;
+  margin-bottom: -150px;
 }

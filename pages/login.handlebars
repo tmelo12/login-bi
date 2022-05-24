@@ -4,7 +4,6 @@
 	<title>Login Bi</title>
 	<link rel="icon" type="image/x-icon" href="images/favicon_io/favicon.ico">
 	<meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -22,9 +21,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="body">
-	<img class="logo-defesa" src="images/logo-defesa.png" alt="Defesa Civil do Amazonas">
+	<div class="container-logo">
+		<img class="logo-defesa" src="images/logo-defesa.png" alt="Defesa Civil do Amazonas">
+	</div>
+	
 	<div class="card-login">
-			<img class="top-detail" src="images/top-detail.png">
+
+		<div class="top-detail">
+			<img class="img-top" src="images/top-detail.png">
+		</div>
+			
+			<div>
 				<span class="login100-form-title">
 					Bem-Vindo(a)
 				</span>
@@ -38,7 +45,7 @@
 
 					<div class="wrap-input100 validate-input" data-validate = "Senha obrigatória">
 						<div class="input-icons">
-							<i class="fa fa-user icon" aria-hidden="true"> </i>
+							<i class="fa fa-lock icon" aria-hidden="true"> </i>
 							<input class="input-field" type="password" name="senha" placeholder="Senha">
 						</div>
 					</div>
@@ -52,8 +59,13 @@
 					<div class="text-center p-t-12" style="color:white">
 						{{message}}						
 					</div>
-					<img class="logo-gov" src="images/governo-amazonas.png">
 				</form>
+			</div>
+					<div>
+						<img class="logo-gov" src="images/governo-amazonas.png">
+					</div>
+					
+				
 	</div>
 	
 <!--===============================================================================================-->	
