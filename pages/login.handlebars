@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<title>Login Bi</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -18,35 +18,28 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-	
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<div class="login100-pic js-tilt" data-tilt>
-					<img src="images/logo-defesa.png" alt="IMG">
-				</div>
-
-				<form class="login100-form validate-form" action="/" method="post">
-					<span class="login100-form-title">
-						Bem-Vindo(a)
-					</span>
-
+<body class="body">
+	<img class="logo-defesa" src="images/logo-defesa.png" alt="Defesa Civil do Amazonas">
+	<div class="card-login">
+			<img class="top-detail" src="images/top-detail.png">
+				<span class="login100-form-title">
+					Bem-Vindo(a)
+				</span>
+				<form action="/" method="post"></form>
 					<div class="wrap-input100 validate-input" data-validate = "Usuario obrigatório">
-						<input class="input100" type="text" name="login" placeholder="Usuario">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-user" aria-hidden="true"></i>
-						</span>
+						<div class="input-icons">
+							<i class="fa fa-user icon" aria-hidden="true"> </i>
+							<input class="input-field" type="text" name="login" placeholder="Usuário">
+						</div>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Senha obrigatória">
-						<input class="input100" type="password" name="senha" placeholder="Senha">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
-						</span>
+						<div class="input-icons">
+							<i class="fa fa-user icon" aria-hidden="true"> </i>
+							<input class="input-field" type="password" name="senha" placeholder="Senha">
+						</div>
 					</div>
 					
 					<div class="container-login100-form-btn">
@@ -58,17 +51,9 @@
 					<div class="text-center p-t-12">
 						{{message}}						
 					</div>
-
-					<div class="text-center p-t-136">
-						
-					</div>
-				</form>
-			</div>
-		</div>
+					<img class="logo-gov" src="images/governo-amazonas.png">
+		</form>
 	</div>
-	
-	
-
 	
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
